@@ -1,0 +1,12 @@
+{
+  "id": "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01#contracts",
+  "agent": "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01",
+  "type": "AgentContractService",
+  "description": "Public summary of contracts associated with the demonstration agent.",
+  "disclosure": "summary-only",
+  "summary": {
+    "completed": 0,
+    "failed": 0
+  },
+  "contracts": []
+}

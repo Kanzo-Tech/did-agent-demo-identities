@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1",
+    {
+      "agentProfile": {
+        "@id": "urn:kanzo:did-agent:v1#agentProfile",
+        "@container": "@set"
+      },
+      "agentStatus": "urn:kanzo:did-agent:v1#agentStatus",
+      "AgentInteractionService": "urn:kanzo:did-agent:v1#AgentInteractionService",
+      "AgentCredentialService": "urn:kanzo:did-agent:v1#AgentCredentialService",
+      "AgentContractService": "urn:kanzo:did-agent:v1#AgentContractService"
+    }
+  ],
+  "id": "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01",
+  "controller": "did:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller",
+  "verificationMethod": [
+    {
+      "id": "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01#p256-key-1",
+      "type": "JsonWebKey2020",
+      "controller": "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "P-256",
+        "x": "Tfl0NkRooAQgOANE8Q563BzMOSCS-_DgwT_EB2MxBr0",
+        "y": "ok0I3LbryMyB3-u55zGBSy4tliO35SSykE4Ak4AzmEI",
+        "alg": "ES256",
+        "use": "sig"
+      }
+    }
+  ],
+  "authentication": [
+    "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01#p256-key-1"
+  ],
+  "assertionMethod": [
+    "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01#p256-key-1"
+  ],
+  "agentProfile": [
+    "basic"
+  ],
+  "agentStatus": "active",
+  "service": [
+    {
+      "id": "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01#interaction",
+      "type": "AgentInteractionService",
+      "serviceEndpoint": "https://raw.githubusercontent.com/Kanzo-Tech/did-agent-demo-identities/main/agents/planner-01/services/interaction.json"
+    },
+    {
+      "id": "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01#credentials",
+      "type": "AgentCredentialService",
+      "serviceEndpoint": "https://raw.githubusercontent.com/Kanzo-Tech/did-agent-demo-identities/main/agents/planner-01/services/credentials.json"
+    },
+    {
+      "id": "did:agent:web:raw.githubusercontent.com:Kanzo-Tech:did-agent-poc:main:demo:controller:planner-01#contracts",
+      "type": "AgentContractService",
+      "serviceEndpoint": "https://raw.githubusercontent.com/Kanzo-Tech/did-agent-demo-identities/main/agents/planner-01/services/contracts.json"
+    }
+  ]
+}
